@@ -22,10 +22,10 @@
           <v-divider class="mx-4 mt-3"></v-divider>
           <v-card-text class="d-flex justify-space-between align-center">
             <p class="text-left font-weight-bold">
-              <a href="#" class="link_pas_de_compte">Vous n'avez pas de compte ?</a>
+              <a href="/CreationDeCompte" class="link_pas_de_compte">Vous n'avez pas de compte ?</a>
             </p>
             <v-card-actions>
-              <v-btn dark color="orange darken-4">Inscrivez-vous</v-btn>
+              <v-btn href="/CreationDeCompte" dark color="orange darken-4">Inscrivez-vous</v-btn>
             </v-card-actions>
           </v-card-text>
         </v-card>

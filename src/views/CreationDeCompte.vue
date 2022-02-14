@@ -8,11 +8,11 @@
           <v-card-title class="justify-center">Inscription</v-card-title>
           <v-card-text>
             <v-form class="px-3">
-              <v-text-field>Prénom</v-text-field>
-              <v-text-field>Nom</v-text-field>
-              <v-text-field>Adresse email</v-text-field>
-              <v-text-field>Mot de passe</v-text-field>
-              <v-text-field>Confirmez le mot de passe</v-text-field>
+              <v-text-field label="Prénom"></v-text-field>
+              <v-text-field label="Nom"></v-text-field>
+              <v-text-field label="Adresse email"></v-text-field>
+              <v-text-field label="Mot de passe"></v-text-field>
+              <v-text-field label="Confirmez le mot de passe"></v-text-field>
             </v-form>
           </v-card-text>
           <v-card-actions>
@@ -21,10 +21,10 @@
           <v-divider class="mx-4 mt-3"></v-divider>
           <v-card-text class="d-flex justify-space-between align-center">
             <p class="text-left font-weight-bold">
-              <a href="#" class="link_vous_avez_compte">Vous avez déjà un compte ?</a>
+              <a href="/Connexion" class="link_vous_avez_compte">Vous avez déjà un compte ?</a>
             </p>
             <v-card-actions>
-              <v-btn dark color="orange darken-4">Se Connecter</v-btn>
+              <v-btn href="/Connexion" dark color="orange darken-4">Se Connecter</v-btn>
             </v-card-actions>
           </v-card-text>
         </v-card>
@@ -35,10 +35,14 @@
 </template>
 
 <script>
+import TheNavigation from '@/components/TheNavigation';
+import TheFooter from '../components/TheFooter.vue';
+
 export default {
   name: 'CreationDeCompte',
   components: {
-    TheNavigation
+    TheNavigation,
+    TheFooter,
   },
 };
 </script>
